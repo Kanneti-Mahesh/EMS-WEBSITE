@@ -114,7 +114,7 @@ function Login() {
       })
 
 
-          let response = await axios.post('http://localhost:8000/admins/login', body,{
+          let response = await axios.post('admins/login', body,{
             headers:{
               'Content-Type':'application/json'
             }
