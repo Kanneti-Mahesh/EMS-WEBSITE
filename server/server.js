@@ -25,7 +25,10 @@ const jwt = require('jsonwebtoken');
 const auth = require('./auth')
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+            origin:"http://localhost:8000",
+            methods:["POST","GET","PUT","DELETE"],
+}));
 
 
 
