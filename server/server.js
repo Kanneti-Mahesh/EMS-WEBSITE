@@ -26,7 +26,7 @@ const auth = require('./auth')
 
 app.use(express.json());
 app.use(cors({
-            origin:"http://localhost:8000",
+            origin:"https://64a852b13e6aa21086d68ac3--zingy-frangipane-fa7c53.netlify.app",
             methods:["POST","GET","PUT","DELETE"],
 }));
 
