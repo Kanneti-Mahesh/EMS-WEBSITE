@@ -11,6 +11,9 @@
    background-color: white !important;
    box-shadow:none !important;
 }
+.menuIcon{
+   color:grey !important;
+}
 .bgcolor{
    color: #0d6efd !important;
 }
