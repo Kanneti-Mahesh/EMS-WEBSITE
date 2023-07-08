@@ -295,8 +295,9 @@ let body = JSON.stringify({
   employeeDate:date
 })
 
-  let editEmp = await axios.put(`http://localhost:8000/employees/update/${id}`,body,{
+  let editEmp = await axios.put(`https://emsbackend.onrender.com/employees/update/${id}`,body,{
     headers:{
+        method:'PUT',
       'x-token':localStorage.getItem('token'),
       'Content-Type':'application/json'
     }
