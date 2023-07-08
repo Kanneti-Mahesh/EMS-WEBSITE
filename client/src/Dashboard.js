@@ -215,6 +215,7 @@ const getEmployees = e =>{
 
   axios.get('employees/list',{
     headers:{
+        method:'GET',
       'x-token':localStorage.getItem('token')
     }
   }).then(
