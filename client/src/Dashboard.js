@@ -213,9 +213,10 @@ const navigate = useNavigate();
 
 const getEmployees = e =>{
 
-  axios.get('employees/list',{
+  axios.get('https://emsbackend.onrender.com/employees/list',{
     headers:{
-        method:'GET',
+       method:'GET',
+        'Content-Type':"application/json",
       'x-token':localStorage.getItem('token')
     }
   }).then(
