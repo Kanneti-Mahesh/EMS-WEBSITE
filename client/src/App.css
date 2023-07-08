@@ -14,6 +14,9 @@
 .MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-i6s8oy{
    background-color: white !important;
 }
+.MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.css-i6s8oy{
+    background: white !important;
+}
 .menuIcon,button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorInherit.MuiIconButton-edgeStart.MuiIconButton-sizeMedium.css-q6oun{
    color:grey !important;
 }
