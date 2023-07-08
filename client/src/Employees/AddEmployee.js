@@ -292,8 +292,9 @@ const submitHandler = async(e)  =>{
       })
       
 
-      let response = await axios.post('http://localhost:8000/employees/register',body,{
+      let response = await axios.post('https://emsbackend.onrender.com/employees/register',body,{
         headers:{
+            method:'POST',
           'Content-Type':'application/json',
           'x-token':localStorage.getItem('token')
         }
