@@ -10,7 +10,7 @@ const cors = require('cors');
 
             //Models...
 const devEmp = require('./models/Employees');
-const devAdmin = require('./models/Admin');
+const devAdmin = require('./models/Admin') ;
 
         //DB config...
 const mongoose = require('mongoose');
