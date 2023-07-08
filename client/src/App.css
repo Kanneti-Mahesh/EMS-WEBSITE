@@ -11,7 +11,7 @@
    background-color: white !important;
    box-shadow:none !important;
 }
-.menuIcon{
+.menuIcon,button.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-colorInherit.MuiIconButton-edgeStart.MuiIconButton-sizeMedium.css-q6oun{
    color:grey !important;
 }
 .bgcolor{
