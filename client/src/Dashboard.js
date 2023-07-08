@@ -420,7 +420,7 @@ const [search,setSearch] = React.useState("");
 
 
                       <FaGithub style={{height:"40px",width:"40px",margin:"0px 25px 0px 75%",color:"#0d6efd",border:"1px solid #E0E0E0",padding:"5px",borderRadius:"8px"}} className="git"/>
-<BsBrushFill style={{height:"30px",width:"30px"}} class='bgcolor' onClick={changeColor} title='Change Theme'/>
+<BsBrushFill style={{height:"30px",width:"30px",color:"#0d6efd"}} class='bgcolor' onClick={changeColor} title='Change Theme'/>
                      {/*-----AVATAR----*/}
               
                           <Stack direction="row" spacing={2} className='avatar'>
