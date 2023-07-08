@@ -25,11 +25,11 @@ const jwt = require('jsonwebtoken');
 const auth = require('./auth')
 
 app.use(express.json());
-app.use(cors({
-            origin:"https://mbems.netlify.app",
-            methods:["POST","GET","PUT","DELETE"],
-}));
-// app.use(cors({origin:"*"}));
+// app.use(cors({
+//             origin:"https://mbems.netlify.app",
+//             methods:["POST","GET","PUT","DELETE"],
+// }));
+app.use(cors({origin:"*"}));
 
 
 
