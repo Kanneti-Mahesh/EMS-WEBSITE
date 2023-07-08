@@ -213,7 +213,7 @@ const navigate = useNavigate();
 
 const getEmployees = e =>{
 
-  axios.get('http://localhost:8000/employees/list',{
+  axios.get('employees/list',{
     headers:{
       'x-token':localStorage.getItem('token')
     }
