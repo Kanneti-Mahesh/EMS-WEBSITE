@@ -252,6 +252,7 @@ React.useEffect(()=>{
       localStorage.removeItem('eemail');
       localStorage.removeItem('edate');
       window.location.reload();
+      navigate('/');
   }
 
 
@@ -260,8 +261,9 @@ React.useEffect(()=>{
   const deleteEmp = async(id) =>{
 
       if(window.confirm("Are you sure you want to delete?")){
-        let delEmp = await axios.delete(`http://localhost:8000/employees/delete/${id}`,{
+        let delEmp = await axios.delete(`https://emsbackend.onrender.com/employees/delete/${id}`,{
           headers:{
+              method:'DELETE',
             'x-token':localStorage.getItem('token'),
             'Content-Type':'application/json'
           }
