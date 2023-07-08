@@ -114,7 +114,7 @@ function Login() {
       })
 
 
-          let response = await axios.post('https://emsbackend.onrender.com/admins/login', body,{
+          let response = await axios.post('admins/login', body,{
             headers:{
               method:'POST',
               'Content-Type':'application/json'
