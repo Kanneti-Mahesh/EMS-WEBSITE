@@ -114,7 +114,7 @@ function Login() {
         adminPassword:password
       })
 
-show();
+setLoader(true);
           let response = await axios.post('https://emsbackend.onrender.com/admins/login', body,{
             headers:{
               method:'POST',
