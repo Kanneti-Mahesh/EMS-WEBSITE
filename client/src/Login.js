@@ -114,14 +114,14 @@ function Login() {
         adminPassword:password
       })
 
-
+show();
           let response = await axios.post('https://emsbackend.onrender.com/admins/login', body,{
             headers:{
               method:'POST',
               'Content-Type':'application/json'
             }
           }).then(
-            res=>{localStorage.setItem('token',res.data.token);show();window.location.reload()}
+            res=>{localStorage.setItem('token',res.data.token);hide();window.location.reload()}
         ).catch(err=>{toast.error(err.response.data);hide()})
 
 
@@ -158,12 +158,12 @@ setAdmin({
 
   
   //Loader...
-const [loader,setLoader] = useState(true);
+const [loader,setLoader] = useState(false);
 const show = ()=>{
-  setLoader(false);
+  setLoader(true);
 }
 const hide = ()=>{
-  setLoader(true);
+  setLoader(false);
 }
 
 
