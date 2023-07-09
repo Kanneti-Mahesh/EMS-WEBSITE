@@ -206,6 +206,7 @@ const handleClose = () => {
 
 const [emp,setEmp] = React.useState([]);
 const navigate = useNavigate();
+const navigateHome = useNavigate();
 
 
 
@@ -252,7 +253,8 @@ React.useEffect(()=>{
       localStorage.removeItem('eemail');
       localStorage.removeItem('edate');
       window.location.reload();
-      navigate('/');
+      navigateHome('/');
+      navigateHome('https://mbems.netlify.app');
   }
 
 
