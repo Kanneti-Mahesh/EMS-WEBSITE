@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react';
 import './App.css';
 import axios from 'axios';
 import {Navigate, useNavigate} from 'react-router-dom';
+import Loader from './Loader';
 
 
 //import local/external packages...
@@ -120,8 +121,8 @@ function Login() {
               'Content-Type':'application/json'
             }
           }).then(
-            res=>{localStorage.setItem('token',res.data.token);window.location.reload()}
-        ).catch(err=>toast.error(err.response.data))
+            res=>{localStorage.setItem('token',res.data.token);show();window.location.reload()}
+        ).catch(err=>{toast.error(err.response.data);hide()})
 
 
 }    
@@ -154,8 +155,16 @@ setAdmin({
 
 
   const {email,password} = admin;
-  
 
+  
+  //Loader...
+const [loader,setLoader] = useState(false);
+const show = ()=>{
+  setLoader(true);
+}
+const hide = ()=>{
+  setLoader(false);
+}
 
 
   return (
@@ -165,6 +174,7 @@ setAdmin({
           reverseOrder={false}
         />
 
+    {loader ? <Loader/> : null}
         
         <Box sx={{ display: 'flex', flexWrap: 'wrap' }} className='login'>
             
