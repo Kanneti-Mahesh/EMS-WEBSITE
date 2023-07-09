@@ -158,12 +158,12 @@ setAdmin({
 
   
   //Loader...
-const [loader,setLoader] = useState(false);
+const [loader,setLoader] = useState(true);
 const show = ()=>{
-  setLoader(true);
+  setLoader(false);
 }
 const hide = ()=>{
-  setLoader(false);
+  setLoader(true);
 }
 
 
